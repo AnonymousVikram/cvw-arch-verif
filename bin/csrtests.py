@@ -66,7 +66,7 @@ seed(0) # make tests reproducible
 
 # writable registers to test with walking 1s and 0s
 mregs = ["mstatus", "mcause", "misa", "medeleg", "mideleg", "mie", "mtvec", "mcounteren", "mscratch", "mepc", "mtval", "mip", "menvcfg", "mstatush", "mseccfg", "mseccfgh"]
-sregs = ["sstatus", "scause", "sie", "stvec", "scounteren", "senvcfg", "sscratch", "sepc", "stval", "sip", "satp", "0x120"] # 0x120 is scountinhibit
+sregs = ["sstatus", "scause", "sie", "stvec", "scounteren", "senvcfg", "sscratch", "sepc", "stval", "sip", "satp"] # 0x120 is scountinhibit, currently unsupported
 uregs = ["fflags", "frm", "fcsr"]
 
 ARCH_VERIF = os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), ".."))
